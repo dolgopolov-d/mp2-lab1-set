@@ -4,7 +4,7 @@
 //   Переработано для Microsoft Visual Studio 2008 Сысоевым А.В. (19.04.2015)
 //
 // Тестирование битового поля и множества
-
+/*
 #include <iomanip>
 
 // #define USE_SET // Использовать класс TSet,
@@ -90,5 +90,5 @@ int main()
   cout << endl;
   cout << "В первых " << n << " числах " << count << " простых" << endl;
 }
-
 #endif
+*/
