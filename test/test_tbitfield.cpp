@@ -96,7 +96,7 @@ TEST(TBitField, throws_when_clear_bit_with_too_large_index)
 
   ASSERT_ANY_THROW(bf.ClrBit(11));
 }
-/*
+
 TEST(TBitField, can_assign_bitfields_of_equal_size)
 {
   const int size = 2;
@@ -222,7 +222,7 @@ TEST(TBitField, and_operator_applied_to_bitfields_of_non_equal_size)
 
   EXPECT_EQ(expBf, bf1 & bf2);
 }
-
+/*
 TEST(TBitField, can_invert_bitfield)
 {
   const int size = 2;
