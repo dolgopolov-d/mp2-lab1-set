@@ -4,7 +4,7 @@
 //   Переработано для Microsoft Visual Studio 2008 Сысоевым А.В. (19.04.2015)
 //
 // Множество - реализация через битовые поля
-
+/*
 #include "tset.h"
 
 TSet::TSet(int mp) : BitField(-1)
@@ -20,7 +20,7 @@ TSet::TSet(const TSet &s) : BitField(-1)
 TSet::TSet(const TBitField &bf) : BitField(-1)
 {
 }
-/*
+
 TSet::operator TBitField()
 {
 }
