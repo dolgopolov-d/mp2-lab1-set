@@ -73,12 +73,11 @@ void TBitField::SetBit(const int n) // установить бит
 }
 void TBitField::ClrBit(const int n) // очистить бит
 {
-	if ((n >= 0) && (n <= BitLen))
+	if ((n >= 0) && (n < BitLen))
 	{
-		int nmbr = n / (sizeof(TELEM) * 8);
 		int pos = n % (sizeof(TELEM) * 8);
-		pMem[nmbr] = pMem[nmbr] << pos;
-		pMem[nmbr] = 0;
+		pMem[GetMemIndex(n)] = pMem[GetMemIndex(n)] << pos;
+		pMem[GetMemIndex(n)] = 0;
 	}
 	else
 		throw "Error";
