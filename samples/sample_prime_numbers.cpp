@@ -90,5 +90,4 @@ int main()
   cout << endl;
   cout << "В первых " << n << " числах " << count << " простых" << endl;
 }
-
 #endif
